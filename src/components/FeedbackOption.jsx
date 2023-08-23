@@ -1,7 +1,11 @@
 import { Button, Buttons } from "./App.styled"
 
-export const Feedback = () => {
-    return <Buttons><Button>Good</Button>
-    <Button>Neutral</Button>
-    <Button>Bad</Button></Buttons> 
+export const Feedback = ({ options, onLeaveFeedback } ) => {
+    return <Buttons>
+        {options.map(option => <Button
+            key={option}
+            type='button'
+            onClick={() => onLeaveFeedback(option)}
+        >{ option}</Button>)}
+    </Buttons>
 }

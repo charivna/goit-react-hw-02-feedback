@@ -1,12 +1,12 @@
+import { ListTitle, StatItems } from "./App.styled";
 
-
-export const Statistics = () => {
+export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     return <div>
-        <h2>Statistics: </h2>
-        <p>Good: <span>0</span></p>
-        <p>Neutral: <span>0</span></p>
-        <p>Bad: <span> 0 </span></p>
-        <p>Total: <span>0</span></p>
-        <p>Positive Feedback: <span>0</span></p>
+        <ListTitle>Statistics</ListTitle>
+        <StatItems>Good: {good }</StatItems>
+        <StatItems>Neutral: {neutral }</StatItems>
+        <StatItems>Bad: {bad} </StatItems>
+        <StatItems>Total: {total }</StatItems>
+        <StatItems>Positive Feedback: {positivePercentage }%</StatItems>
     </div>
 }

@@ -23,11 +23,20 @@ cursor: pointer;
 border: none;
 font-weight: 600;
 
-
-
-    :first-child {
+    :first-of-type {
   background: #3b8d3b;}
-  :last-child{
+  :last-of-type{
     background-color: #c85757;
   }
 }`
+
+export const ListTitle = styled.ul`font-size: 25px;
+margin-left: 50px`
+
+export const StatItems = styled.li`list-style: none;
+font-size: 25px;
+margin-bottom: 10px;
+`
+
+export const NotificationMessage = styled.p`font-size: 25px;
+margin-left: 50px;`
